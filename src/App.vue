@@ -1,8 +1,14 @@
 <script setup>
+import Header from "./components/Header.vue"
+import Footer from "./components/Footer.vue"
 </script>
 
 <template>
-  <button class="btn btn-primary">Primary <i class="bi bi-usb-symbol"></i></button>
+  <Header />
+  <RouterView />
+  <Footer />
 </template>
 
-<style scoped></style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+</style>
